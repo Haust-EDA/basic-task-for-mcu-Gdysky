@@ -18,13 +18,14 @@ void delay_ms(unsigned int x)  // 延时函数
 
 int main(void)
 {
-    """
-    在下方编写你的代码
-    """
-    
-
- 
-
+    unsigned char led=0x80
+    while(1){
+        P1=led
+            delay(500)
+            led=led>>1
+            if(lef==0x00)
+               led=0x80
+    }
     return 0;
 }
 
